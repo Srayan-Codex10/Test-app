@@ -1,0 +1,54 @@
+/* Header */ 
+#home {
+    float:left;
+}
+.nav-wrapper {
+    text-align: center;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    font-family: 'Germania One', cursive;
+    font-size: 30px;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tab {
+    display: inline-block;
+    padding: 2%;
+}
+
+/* ************ */
+
+/* footer */
+
+footer {
+    margin: 41% 0 0 0;
+    background-color: dodgerblue;
+    border-radius: 1px;
+    padding: 1%;
+    color: gainsboro;
+    font-weight: bold;
+    font-family: 'Germania One', cursive;
+    font-size: 20px;
+}
+
+#author {
+    float: right;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0.5%;
+}
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+.bottom-credits {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ************** */
