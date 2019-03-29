@@ -7,13 +7,14 @@
                 <li class="tab">TEACHER</li>
                 <li class="tab">Non-Teaching</li>
                 <li class="tab">ASSETS</li>
+                <!--Test-tabs--><li class="tab" (click)="displayTable()">Show Table</li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
-    <section>
+    <section *ngIf="genTable">
             <app-gen-table></app-gen-table>
     </section>
 </main>
