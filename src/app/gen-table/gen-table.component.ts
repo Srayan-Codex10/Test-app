@@ -8,17 +8,21 @@ import data from '../../assets/data.json' ;
   styleUrls: ['./gen-table.component.css']
 })
 export class GenTableComponent implements OnInit {
-  public genList: TableData;
+  public studentList: TableData;
+  public teacherList: TableData;
+  public nonTeacherList: TableData;
+  public genArray = [];
   keyArray = [];
 
   constructor() {
-    this.genList = new TableData(data.student.id, data.student.name, data.student.desc);
-    this.genList = new TableData(data.teacher.id, data.teacher.name, data.teacher.desc);
-    this.genList = new TableData(data['non-teacher'].id, data['non-teacher'].name, data['non-teacher'].desc);
-    this.keyArray = Object.keys(this.genList);
-    console.log(this.keyArray);
-
-  }
+    this.studentList = new TableData(data.student[0].id, data.student[0].name, data.student[0].desc);
+    this.genArray.push(this.studentList);
+    this.teacherList = new TableData(data.teacher[0].id, data.teacher[0].name, data.teacher[0].desc);
+    this.genArray.push(this.teacherList);
+    this.nonTeacherList = new TableData(data['non-teacher'][0].id, data['non-teacher'][0].name, data['non-teacher'][0].desc);
+    this.genArray.push(this.nonTeacherList);
+    this.keyArray = Object.keys(this.studentList);
+    }
 
   ngOnInit() {
   }

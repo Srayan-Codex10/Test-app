@@ -6,8 +6,8 @@
       <th>DESCRIPTON</th>
     </thead>
     <tbody>
-      <tr>
-        <td *ngFor="let item of keyArray">{{genList[item]}}</td>
+      <tr *ngFor ="let index of genArray">
+        <td *ngFor="let item of keyArray">{{index[item]}}</td>
       </tr>
     </tbody>
     <tfoot></tfoot>

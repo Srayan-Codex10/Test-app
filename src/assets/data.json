@@ -1,18 +1,18 @@
 {
-    "student":{
+    "student":[{
                 "desc":"student",
                 "id":"32",
                 "name":"srayan"      
-            },
-    "teacher":{
+            }],
+    "teacher":[{
                 "desc":"teacher",
                 "id":"20",
                 "name":"Avik"
-            },
-    "non-teacher":{
+            }],
+    "non-teacher":[{
                 "desc":"non-teacher",
                 "id":"89",
                 "name":"Ayush"
-            }
+            }]
 
 }
