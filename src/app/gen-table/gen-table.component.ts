@@ -13,6 +13,8 @@ export class GenTableComponent implements OnInit {
 
   constructor() {
     this.genList = new TableData(data.student.id, data.student.name, data.student.desc);
+    this.genList = new TableData(data.teacher.id, data.teacher.name, data.teacher.desc);
+    this.genList = new TableData(data['non-teacher'].id, data['non-teacher'].name, data['non-teacher'].desc);
     this.keyArray = Object.keys(this.genList);
     console.log(this.keyArray);
 
