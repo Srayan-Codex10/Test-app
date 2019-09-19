@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TableData } from '../table-data';
+import data from '../../assets/data.json' ;
 
 @Component({
   selector: 'app-gen-table',
@@ -7,13 +8,15 @@ import { TableData } from '../table-data';
   styleUrls: ['./gen-table.component.css']
 })
 export class GenTableComponent implements OnInit {
+  public genList: TableData;
+  keyArray = [];
 
-  public genList: Array<TableData> = [];
-  test() {
-    this.genList.push({id: '34', name: 'Srayan', desc: 'Student'});
-    console.log(this.genList);
+  constructor() {
+    this.genList = new TableData(data.student.id, data.student.name, data.student.desc);
+    this.keyArray = Object.keys(this.genList);
+    console.log(this.keyArray);
+
   }
-  constructor() { }
 
   ngOnInit() {
   }

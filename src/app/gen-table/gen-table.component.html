@@ -5,7 +5,11 @@
       <th>NAME</th>
       <th>DESCRIPTON</th>
     </thead>
-    <tbody><tr><td (click)="test()">Click!</td></tr></tbody>
+    <tbody>
+      <tr>
+        <td *ngFor="let item of keyArray">{{genList[item]}}</td>
+      </tr>
+    </tbody>
     <tfoot></tfoot>
   </table>
 </div>

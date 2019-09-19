@@ -31,7 +31,7 @@
 /* footer */
 
 footer {
-    margin: 41% 0 0 0;
+    margin: 41% 0 0 0; /*!!!*/
     background-color: dodgerblue;
     border-radius: 1px;
     padding: 1%;

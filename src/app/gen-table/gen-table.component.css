@@ -1,0 +1,19 @@
+tr, td, th {
+
+    border: 3px solid lightskyblue;
+    text-align: center;
+    
+}
+table {
+
+    font-size: 45px;
+    font-family: 'Germania One';
+    border-collapse: collapse;
+
+}
+
+#gentable {
+
+    width: 500px;
+    margin: 2em auto;
+}
